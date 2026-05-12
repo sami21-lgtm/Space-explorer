@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang> = "en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Explorer - Interactive Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header-title">
+            <h1>Solar Explorer</h1>
+            <span>Interactive Space Suite</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="menu-item active" data-planet="jupiter">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Jupiter</span>
+                    <span class="planet-distance">5.203 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="saturn">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Saturn</span>
+                    <span class="planet-distance">9.539 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="earth">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Earth</span>
+                    <span class="planet-distance">1.000 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="mars">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Mars</span>
+                    <span class="planet-distance">1.524 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="mercury">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Mercury</span>
+                    <span class="planet-distance">0.390 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="venus">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Venus</span>
+                    <span class="planet-distance">0.723 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="uranus">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Uranus</span>
+                    <span class="planet-distance">19.18 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="neptune">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Neptune</span>
+                    <span class="planet-distance">30.06 AU</span>
+                </div>
+            </div>
+            <div class="menu-item" data-planet="pluto">
+                <div class="bullet"></div>
+                <div class="planet-info">
+                    <span class="planet-name">Pluto</span>
+                    <span class="planet-distance">39.48 AU</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet-viewport">
+            <div class="current-planet-body jupiter" id="planetBody">
+                <div class="orbit-lines">
+                    <div class="moon-element europa">
+                        <span class="moon-label">Europa</span>
+                    </div>
+                    <div class="moon-element ganymede">
+                        <span class="moon-label">Ganymede</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-panel" id="contentPanel">
+            <h3 id="panelSubtitle">Planet</h3>
+            <h2 id="panelTitle">Jupiter</h2>
+            <p id="panelDesc">Jupiter is the largest planet in our Solar System. Fittingly, it was named after the king of the gods in Roman mythology, exhibiting massive storms and beautiful complex gas layers.</p>
+            <div class="read-more-btn">Read More</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
